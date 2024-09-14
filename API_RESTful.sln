@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_RESTful", "API_RESTful\API_RESTful.csproj", "{6604797A-F4EF-48DC-B09A-C5ACEDDF5C9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transferencia_Datos", "Transferencia_Datos\Transferencia_Datos.csproj", "{B5CDD098-D07D-49C2-BDFF-1B659CEF04E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6604797A-F4EF-48DC-B09A-C5ACEDDF5C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6604797A-F4EF-48DC-B09A-C5ACEDDF5C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6604797A-F4EF-48DC-B09A-C5ACEDDF5C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CDD098-D07D-49C2-BDFF-1B659CEF04E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CDD098-D07D-49C2-BDFF-1B659CEF04E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CDD098-D07D-49C2-BDFF-1B659CEF04E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CDD098-D07D-49C2-BDFF-1B659CEF04E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
