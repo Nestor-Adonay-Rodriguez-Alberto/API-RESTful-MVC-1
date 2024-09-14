@@ -1,0 +1,69 @@
+﻿@model Transferencia_Datos.Producto_DTO.Registrados_Producto_DTO
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayName("NOMBRE")
+                </th>
+                <th>
+                    @Html.DisplayName("CATEGORIA:")
+                </th>
+                <th>
+                    @Html.DisplayName("PRECIO")
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model.Lista_Productos)
+            {
+
+                <tr>
+                    <td>@item.Nombre</td>
+                    <td>@item.Categoria</td>
+                    <td>@item.Precio</td>
+
+                    <td>
+                        <div class="d-flex flex-wrap">
+                            <div class="btn-group">
+                                <a asp-action="Edit" asp-route-id="@item.IdProducto" class="btn btn-primary rounded">Editar</a>
+                                <a asp-action="Details" asp-route-id="@item.IdProducto" class="btn btn-secondary rounded">Detalles</a>
+                                <a asp-action="Delete" asp-route-id="@item.IdProducto" class="btn btn-danger rounded">Eliminar</a>
+                            </div>
+                            <style>
+                                .btn-group {
+                                    display: flex;
+                                    gap: 5px;
+                                }
+
+                                .btn {
+                                    flex: 1;
+                                    border-radius: 5px;
+                                }
+                            </style>
+                        </div>
+                    </td>
+
+                </tr>
+
+            }
+
+
+        </tbody>
+
+    </table>
+</div>
+</div>

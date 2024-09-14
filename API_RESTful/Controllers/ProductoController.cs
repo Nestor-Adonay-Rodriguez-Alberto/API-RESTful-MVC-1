@@ -36,7 +36,7 @@ namespace API_RESTful.Controllers
             Registrados_Producto_DTO Lista_Productos = new Registrados_Producto_DTO();
 
             // Agregamos cada registro obtenido a la lista que retornaremos:
-            foreach (Producto producto in Registros_Productos)
+            foreach (Producto producto in Registros_Productos) 
             {
                 Lista_Productos.Lista_Productos.Add(new Registrados_Producto_DTO.Producto
                 {
