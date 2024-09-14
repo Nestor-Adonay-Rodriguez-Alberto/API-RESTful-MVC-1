@@ -1,42 +1,52 @@
 ﻿@model Transferencia_Datos.Producto_DTO.ObtenerPorID_Producto_DTO
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "DETALLE";
 }
 
-<h1>Details</h1>
+<h1>Detalle</h1>
 
 <div>
-    <h4>ObtenerPorID_Producto_DTO</h4>
+    <h4>Datos:</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdProducto)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdProducto)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nombre)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nombre)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Categoria)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Categoria)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Precio)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Precio)
-        </dd>
-    </dl>
+
+    <!-- Fila #1 -->
+    <div class="row">
+
+        <div class="col-sm-3">
+            <dt>NOMBRE:</dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+        </div>
+
+        <div class="col-sm-3">
+            <dt>CATEGORIA:</dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Categoria)
+            </dd>
+        </div>
+
+    </div>
+
+    <!-- Fila #1 -->
+    <div class="row">
+
+        <div class="col-sm-4">
+            <dt>PRECIO:</dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Precio)
+            </dd>
+        </div>
+
+    </div>
+
+
+    <!-- BOTONES -->
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.IdProducto" class="btn btn-primary">EDITAR</a> |
+        <a asp-action="Index" class="btn btn-secondary">CANCELAR</a>
+    </div>
+
 </div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
-</div>
+
