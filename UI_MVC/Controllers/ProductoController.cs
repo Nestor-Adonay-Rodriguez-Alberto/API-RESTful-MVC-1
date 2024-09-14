@@ -168,10 +168,10 @@ namespace UI_MVC.Controllers
         // BUSCA UN REGISTRO CON EL MISMO ID EN LA DB Y LO ELIMINA:
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(ObtenerPorID_Producto_DTO obtenerPorID_Producto_DTO)
         {
             // Solicitud GET al Endpoint de la API:
-            HttpResponseMessage Respuesta = await _HttpClient.DeleteAsync("/api/Producto/" + id);
+            HttpResponseMessage Respuesta = await _HttpClient.DeleteAsync("/api/Producto/" + obtenerPorID_Producto_DTO.IdProducto);
 
             // True=200-299
             if (Respuesta.IsSuccessStatusCode)
