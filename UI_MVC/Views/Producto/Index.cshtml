@@ -1,18 +1,18 @@
 ﻿@model Transferencia_Datos.Producto_DTO.Registrados_Producto_DTO
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "REGISTROS";
 }
 
-<h1>Index</h1>
+<h1>Productos Registrados</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-dark">Crear Nuevo</a>
 </p>
 
 <div class="table-responsive">
     <table class="table table-striped">
-        <thead>
+        <thead> 
             <tr>
                 <th>
                     @Html.DisplayName("NOMBRE")
