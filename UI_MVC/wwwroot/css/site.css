@@ -16,3 +16,21 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.custom-body {
+    background-color: #6d6d6d; /* Color de fondo personalizado para el cuerpo */
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-link {
+        order: -1;
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+}
+
